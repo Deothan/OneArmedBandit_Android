@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">One Armed Bandit</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="roll">Roll</string>
+    <string name="betBtnText">Bet</string>
+    <string name="makeBet">Change bet</string>
+
+    <string-array name="bets" >
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+</resources>

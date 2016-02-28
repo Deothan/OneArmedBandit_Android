@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="dk.deothan.onearmedbandit.MainActivity">
+
+    <TextView
+        android:id="@+id/currentMoney"
+        android:textSize="20sp"
+        android:textColor="@color/BLACK"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/image2"
+        android:contentDescription="@null"
+        android:background="@drawable/fruit_animation1" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/currentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:background="@drawable/fruit_animation2" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/currentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image2"
+        android:contentDescription="@null"
+        android:background="@drawable/fruit_animation3" />
+
+    <Button android:id="@+id/stop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image1"
+        android:layout_toLeftOf="@+id/stop2"
+        android:onClick="stopBtnClicked"
+        android:text="@string/stop" />
+
+    <Button android:id="@+id/stop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopBtnClicked"
+        android:text="@string/stop" />
+
+    <Button android:id="@+id/stop3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_toRightOf="@+id/stop2"
+        android:onClick="stopBtnClicked"
+        android:text="@string/stop" />
+
+    <Button android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_centerHorizontal="true"
+        android:onClick="rollBthClicked"
+        android:text="@string/roll" />
+
+    <TextView
+        android:id="@+id/currentBet"
+        android:textColor="@color/BLACK"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/changeBetBtn"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/changeBetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/makeBet"
+        android:layout_centerVertical="true"
+        android:onClick="changeBetBthClicked"/>
+
+</RelativeLayout>
